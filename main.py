@@ -5,7 +5,7 @@ pymysql.install_as_MySQLdb()
 from pullfromtwitter import *
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:password@twitterdb.cdfnbhvkuejj.us-east-2.rds.amazonaws.com:3306/mydb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://rds_user:rds_password@rds_endpoint:3306/mydb'
 db = SQLAlchemy(app)
 
 class TweetsModel(db.Model):
