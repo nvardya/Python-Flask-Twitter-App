@@ -22,7 +22,12 @@ class UserModel(db.Model):
     name = db.Column(db.String(255))
     username = db.Column(db.String(255))
 ```
-
+The syntax for inserting into these Models was also much simpler:
+```python
+ new_user = UserModel(userid=author_id, name=author_name, username=author_username)
+ db.session.add(new_user)
+ db.session.commit()
+ ```
 # 2. App Routing
 Flask's `@app.route`functionality makes it very easy to build a simple web application. It essentially maps a specified URL to a function. Additionally, POST and GET methods can be defined within the routes if different lines of code need to be executed. Below is the homepage route used for this project:
 ```python
