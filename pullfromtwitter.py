@@ -3,7 +3,7 @@ from datetime import date, datetime, timezone
 from time import strftime
 from main import *
 
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAOEFbgEAAAAAVaRHdmWi%2BePpW2NYwhx5Ejw%2FXIg%3Dv3BHOT1vIZGfmY2zzrCjnRIZ47YYSmVt4jwfEwYsYh0f5XbpVo"
+bearer_token = my_bearer_token
 search_url = "https://api.twitter.com/2/tweets/search/recent"
 today_date = date.today()
 converted_today_date = str(today_date)
