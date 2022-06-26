@@ -37,3 +37,21 @@ def home():
     else:
      return render_template('base.html')
 ```
+
+# 3. Render Template
+Flasks's `render_template` function allowed me to easily call the HTML file to display when routing the application to a specified URL:
+```python
+return render_template('mynewtweet.html', new_tweet=new_tweet)`
+```
+Additionally, I was able to use Jinja's template engine to pass variables from my Python backend code to the HTML:
+```html
+{% for tweets in mytweets %}
+  <tr>
+      <td>{{ tweets.id }}</td>
+      <td>{{ tweets.tweet }}</td>
+  </tr>
+{% endfor %}
+```
+https://user-images.githubusercontent.com/53916435/175794843-a950defd-fd72-4f6d-9f28-bf0690ad3e73.mov
+
+
