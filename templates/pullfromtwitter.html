@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<title>Flask App</title>
+</head>
+<body>
+
+<h1>Response from Twitter</h1>
+<p>Below are the primary keys and the tweets stored in the MySQL TweetsModel table</p>
+<table>
+  <tr>
+      <td>ID</td>
+      <td>Tweet</td>
+  </tr>
+{% for tweets in mytweets %}
+  <tr>
+      <td>{{ tweets.id }}</td>
+      <td>{{ tweets.tweet }}</td>
+  </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

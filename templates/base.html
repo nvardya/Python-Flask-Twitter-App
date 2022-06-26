@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<title>Flask App</title>
+</head>
+<body>
+<h1>Flaskifying my Application</h1>
+<form action="/pulltweets" method="get">
+        <button type="submit" class="button" value="Pull from Twitter" >Pull Tweets & Insert into RDS</button>
+    </form>
+
+    <form action="/" method="POST">
+      <input type = "text" name="newtweet" id="newtweet">
+      <button type="submit" class="button" value="Submit" >Add Tweet</button>
+    </form>
+
+</body>
+</html>
