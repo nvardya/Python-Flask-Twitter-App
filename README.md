@@ -1,6 +1,6 @@
-# Python-Flask-Twitter-App
+# Python Flask & Twitter-App
 
-This project is an enhancment of my oriingal Python/MySQL/Twitter project. This project was built using the Python Flask framework. This document will call out the important aspects of the Flask framework that were incorporated in creating this basic web app
+This project is an enhancment of my oriingal [Python/MySQL/Twitter project](https://github.com/nvardya/Twitter-Python-Scraper). This project was built using the Python Flask framework. This document will call out the important aspects of the Flask framework that were incorporated in creating this basic web app
 
 # 1. SQLAlchemy
 The `SQLAlchemy` extension for Flask was a major differenc in building this application. Connecting to my AWS hosted RDS could be executed with a single line of code:
